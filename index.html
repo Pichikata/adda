@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ADDA — comida, juegos de mesa y diversión para compartir." />
+  <title>ADDA | Comida + Juegos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="ADDA inicio">
+      <span class="brand-mark">ADDA</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#local">El local</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow">🍕 COMIDA + 🎲 JUEGOS</div>
+        <h1>ADDA</h1>
+        <p class="hero-title">Comida + juegos<br><span>= diversión</span></p>
+        <p class="hero-text">
+          Empanadas, pizza y juegos de mesa en un solo lugar.
+          Un espacio para compartir en familia y con amigos.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">🍴 Ver menú</a>
+          <a class="btn btn-secondary" href="#juegos">🎲 Ver juegos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights" aria-label="Propuesta de ADDA">
+      <article><span>🍕</span><h2>Rica comida</h2><p>Empanadas, pizzas y más.</p></article>
+      <article><span>🎲</span><h2>Juegos de mesa</h2><p>Clásicos para compartir.</p></article>
+      <article><span>👨‍👩‍👧‍👦</span><h2>Para toda la familia</h2><p>Diversión para todas las edades.</p></article>
+      <article><span>✨</span><h2>Un ambiente único</h2><p>Comer, jugar y disfrutar.</p></article>
+    </section>
+
+    <section class="cards-section">
+      <div class="section-heading">
+        <span class="section-kicker">CONOCÉ ADDA</span>
+        <h2>Elegí tu plan</h2>
+      </div>
+
+      <div class="cards">
+        <a class="feature-card food-card" href="#menu">
+          <div class="card-image food-placeholder">🥟 🍕</div>
+          <div class="card-content">
+            <span>01</span>
+            <h3>Menú</h3>
+            <p>Empanadas, pizzas, bebidas y más.</p>
+            <strong>Ver menú →</strong>
+          </div>
+        </a>
+
+        <a class="feature-card games-card" href="#juegos">
+          <div class="card-image games-placeholder">🎲 ♟️</div>
+          <div class="card-content">
+            <span>02</span>
+            <h3>Juegos</h3>
+            <p>Descubrí los juegos de mesa disponibles.</p>
+            <strong>Ver juegos →</strong>
+          </div>
+        </a>
+
+        <a class="feature-card local-card" href="#local">
+          <div class="card-image local-placeholder">🕹️ 🍽️</div>
+          <div class="card-content">
+            <span>03</span>
+            <h3>El local</h3>
+            <p>Conocé el espacio donde pasa todo.</p>
+            <strong>Ver más →</strong>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog-full" id="menu">
+      <div class="catalog-head">
+        <div class="section-heading">
+          <span class="section-kicker">🍕 COMIDAS</span>
+          <h2>Comida para compartir.</h2>
+          <p>Deslizá para ver todas las opciones de ADDA.</p>
+        </div>
+        <div class="carousel-controls" aria-label="Controles del catálogo de comidas">
+          <button class="carousel-arrow" type="button" data-carousel="food-carousel" data-direction="prev" aria-label="Comidas anteriores">←</button>
+          <button class="carousel-arrow" type="button" data-carousel="food-carousel" data-direction="next" aria-label="Más comidas">→</button>
+        </div>
+      </div>
+
+      <div class="catalog-carousel" id="food-carousel">
+        <article class="product-card food-product">
+          <div class="product-art empanadas-art">🥟🥟🥟</div>
+          <div class="product-body">
+            <span class="tag">COMIDA</span>
+            <h3>Empanadas</h3>
+            <p>Una opción ideal para compartir mientras arranca la partida.</p>
+            <div class="product-meta"><span>🥟 Para compartir</span><b>Precio próximamente</b></div>
+          </div>
+        </article>
+
+        <article class="product-card food-product">
+          <div class="product-art pizza-art">🍕</div>
+          <div class="product-body">
+            <span class="tag">COMIDA</span>
+            <h3>Pizza</h3>
+            <p>Pizza para acompañar una noche de juegos, familia y amigos.</p>
+            <div class="product-meta"><span>🍕 Para compartir</span><b>Precio próximamente</b></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="carousel-hint">← Deslizá para ver más comidas →</div>
+    </section>
+
+    <section class="catalog-full games-catalog" id="juegos">
+      <div class="catalog-head">
+        <div class="section-heading">
+          <span class="section-kicker">🎲 JUEGOS</span>
+          <h2>Elegí qué jugar.</h2>
+          <p>Juegos disponibles para disfrutar dentro del local.</p>
+        </div>
+        <div class="carousel-controls" aria-label="Controles del catálogo de juegos">
+          <button class="carousel-arrow" type="button" data-carousel="games-carousel" data-direction="prev" aria-label="Juegos anteriores">←</button>
+          <button class="carousel-arrow" type="button" data-carousel="games-carousel" data-direction="next" aria-label="Más juegos">→</button>
+        </div>
+      </div>
+
+      <div class="catalog-carousel" id="games-carousel">
+        <article class="product-card game-product">
+          <div class="product-photo">
+            <img src="https://www.kimland.pl/userdata/public/gfx/124380/monopolyc.jpg"
+                 alt="Caja de Monopoly clásico" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <span class="tag cyan">CLÁSICO</span>
+            <h3>Monopoly</h3>
+            <p>Comprá, vendé e intercambiá propiedades hasta convertirte en el último jugador con dinero.</p>
+            <div class="game-meta">
+              <span>👥 2–6 jugadores</span>
+              <span>🎂 +8 años</span>
+            </div>
+            <button class="game-button" type="button" data-game="monopoly">Ver juego →</button>
+          </div>
+        </article>
+
+        <article class="product-card game-product">
+          <div class="product-photo">
+            <img src="https://yetem.com/wp-content/uploads/2017/06/teg-clasico-570x570.jpg"
+                 alt="Caja de T.E.G. Tradicional" loading="lazy" />
+          </div>
+          <div class="product-body">
+            <span class="tag pink">ESTRATEGIA</span>
+            <h3>T.E.G.</h3>
+            <p>Conquistá territorios, armá estrategias y cumplí tu objetivo secreto.</p>
+            <div class="game-meta">
+              <span>👥 2–6 jugadores</span>
+              <span>🎂 +12 años</span>
+            </div>
+            <button class="game-button pink-button" type="button" data-game="teg">Ver juego →</button>
+          </div>
+        </article>
+
+        <article class="product-card game-product coming-card">
+          <div class="coming-art">🎲</div>
+          <div class="product-body">
+            <span class="tag">PRÓXIMAMENTE</span>
+            <h3>Más juegos</h3>
+            <p>Vamos a sumar nuevos juegos de mesa al catálogo a medida que estén disponibles en el local.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="carousel-hint">← Deslizá para ver más juegos →</div>
+    </section>
+
+    <section class="local-section" id="local">
+      <div class="local-copy">
+        <span class="section-kicker">📍 EL LOCAL</span>
+        <h2>Un lugar para comer, jugar y pasarla bien.</h2>
+        <p>Encontrá acá la información del espacio, la ubicación y los horarios de ADDA.</p>
+      </div>
+      <div class="local-photo">📸<br><span>Foto del local · próximamente</span></div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-brand">ADDA</div>
+    <p>Un lugar para jugar en buena compañía.</p>
+    <div class="footer-info">
+      <span>📍 Calle Falsa 1234</span>
+      <span>🕒 Lun–Vie 08:00–20:00 · Sáb–Dom 08:00–02:00</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
