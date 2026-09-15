@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADDA — Comida + Juegos</title>
   <link rel="stylesheet" href="styles.css">
+  <style id="catalog-smooth-scroll">
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #menu,
+    #juegos {
+      scroll-margin-top: 90px;
+    }
+  </style>
 </head>
 <body>
 
@@ -58,8 +68,30 @@
       </div>
     </section>
 
+    <section class="feature-section container">
+      <article class="feature-card">
+        <div class="feature-icon">🍴</div>
+        <h2>Menú</h2>
+        <p>Conocé nuestras comidas disponibles.</p>
+        <a href="#menu">Ver comidas →</a>
+      </article>
 
-<!-- CATÁLOGO DE COMIDAS -->
+      <article class="feature-card">
+        <div class="feature-icon">🎲</div>
+        <h2>Juegos</h2>
+        <p>Descubrí los juegos disponibles para disfrutar en ADDA.</p>
+        <a href="#juegos">Ver juegos →</a>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h2>El local</h2>
+        <p>Encontranos en Calle Falsa 1234.</p>
+        <a href="#local">Conocé el local →</a>
+      </article>
+    </section>
+
+    <!-- CATÁLOGO DE COMIDAS -->
     <section id="menu" class="catalog-section container">
       <div class="section-heading">
         <div>
@@ -187,27 +219,47 @@
       </div>
     </section>
 
-</main>
+    <section id="local" class="local-section">
+      <div class="container local-grid">
+        <div>
+          <span class="eyebrow">EL LOCAL</span>
+          <h2>Un lugar para compartir</h2>
+          <p>
+            Comida, juegos de mesa y un espacio pensado para pasar un buen momento
+            en familia o con amigos.
+          </p>
+        </div>
+
+        <div class="local-info">
+          <div>
+            <strong>📍 Dirección</strong>
+            <p>Calle Falsa 1234</p>
+          </div>
+          <div>
+            <strong>🕐 Horarios</strong>
+            <p>Lunes a viernes: 08:00–20:00<br>
+               Sábados y domingos: 08:00–02:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer id="contacto" class="site-footer">
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">ADDA</div>
+        <p>Comida + juegos = diversión.</p>
       </div>
       <div>
-        <strong>Un lugar para compartir</strong>
-        <p>Comida, juegos de mesa y un espacio pensado para pasar un buen momento en familia o con amigos.</p>
-      </div>
-      <div>
-        <strong>📍 Dirección</strong>
+        <strong>Contacto</strong>
         <p>Calle Falsa 1234</p>
       </div>
       <div>
-        <strong>🕐 Horarios</strong>
-        <p>Lunes a viernes: 08:00–20:00<br>
-           Sábados y domingos: 08:00–02:00</p>
+        <strong>Horarios</strong>
+        <p>Lun–Vie 08:00–20:00<br>Sáb–Dom 08:00–02:00</p>
       </div>
-</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
