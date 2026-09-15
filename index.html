@@ -27,11 +27,14 @@
   <main>
     <!-- PORTADA: ahora queda solamente la nueva imagen -->
     <section id="inicio" class="hero hero-image-only" aria-label="Portada de ADDA">
-      <img
-        src="assets/adda-hero.png"
-        alt="ADDA: comida y juegos de mesa"
-        class="hero-image"
-      >
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/adda-hero-mobile.webp">
+        <img
+          src="assets/adda-hero.webp"
+          alt="ADDA: comida y juegos de mesa"
+          class="hero-image"
+        >
+      </picture>
     </section>
 
     <section class="highlights container">
